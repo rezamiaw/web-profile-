@@ -71,6 +71,9 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #55a8fd;
+    padding: 20px;
+    font-size: 16px;
+    transition: 0.5s;
 
 }
 
@@ -87,6 +90,11 @@ nav ul li a:hover{
     text-decoration: none;
     padding: 5px 10px 5px 10px;
     border: 1px solid #888;
+}
+.logo-icon{
+    position: relative;
+    height: 100%;
+    margin-left: 60px;
 }
 
 /*profile section */
@@ -157,4 +165,93 @@ section#box-profile{
 .information .data p{
     float: left;
 
+}
+
+/* form */
+section#input-form{
+    position: relative;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 0 7px 0px rgba(132, 146, 146, 0.2);
+    padding: 30px;
+}
+#input-form .form{
+    width: 100%;
+    display: grid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+label{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+input{
+    font-family: 'Helvetica', sans-serif;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #8888;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px; 
+}
+
+
+@media(min-width:321px) and (max-width: 425px){
+    section#box-profile{
+        height: 630px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+    }
+
+    .menu-mobile{
+        top: 20px;
+        right: 10%;
+        display: inline-block;
+    }
+    nav ul{
+        display: none;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        top: 43px;
+        z-index: 99;
+        background: #fff;
+    }
+    nav ul li{
+        float: unset;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .description{
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        border: none;
+    }
+    .description .button{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .img-profile .photo{
+        left: 35px;
+        position: relative;
+    }
+    .information{
+        top: 75px;
+        margin-left: 25px;
+        font-size: 14px;
+    }
+    section#input-form{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
